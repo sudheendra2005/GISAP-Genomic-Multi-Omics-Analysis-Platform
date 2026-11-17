@@ -67,3 +67,10 @@ data/raw/
 data/cache/
 data/reference-dbs/
 data/minio/
+data/s3_storage/
+data/checkpoint_test/
+data/hits_*.parquet
+data/reference_core.fasta
+
+# Local dev SQLite DB (not for version control)
+gisap_metadata.db
