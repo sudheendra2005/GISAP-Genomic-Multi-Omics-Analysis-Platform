@@ -1,0 +1,102 @@
+version: "1.0.0"
+skills:
+  - id: "fasta-fastq-processing"
+    name: "FASTA & FASTQ Stream Processing"
+    version: "1.0.0"
+    scope: "project-local"
+    responsible_agent: "bioinformatics"
+    config_path: ".agents/skills/fasta-fastq-processing/SKILL.md"
+    dependencies: ["biopython"]
+    validation_status: "verified"
+
+  - id: "sequence-validation"
+    name: "Streaming Sequence & Checksum Validation"
+    version: "1.0.0"
+    scope: "project-local"
+    responsible_agent: "backend"
+    config_path: ".agents/skills/sequence-validation/SKILL.md"
+    dependencies: ["hashlib"]
+    validation_status: "verified"
+
+  - id: "biological-annotation"
+    name: "Evidence-Based Biological Annotation"
+    version: "1.0.0"
+    scope: "project-local"
+    responsible_agent: "bioinformatics"
+    config_path: ".agents/skills/biological-annotation/SKILL.md"
+    dependencies: ["pyarrow", "duckdb"]
+    validation_status: "verified"
+
+  - id: "blast-workflows"
+    name: "BLAST Similarity Search Execution"
+    version: "1.0.0"
+    scope: "project-local"
+    responsible_agent: "bioinformatics"
+    config_path: ".agents/skills/blast-workflows/SKILL.md"
+    dependencies: ["blast+"]
+    validation_status: "verified"
+
+  - id: "protein-domain-analysis"
+    name: "Protein & Domain Profile Search"
+    version: "1.0.0"
+    scope: "project-local"
+    responsible_agent: "bioinformatics"
+    config_path: ".agents/skills/protein-domain-analysis/SKILL.md"
+    dependencies: ["hmmer", "diamond"]
+    validation_status: "verified"
+
+  - id: "nextflow-development"
+    name: "Nextflow DAG Scientific Workflow Development"
+    version: "1.0.0"
+    scope: "project-local"
+    responsible_agent: "devops-sre"
+    config_path: ".agents/skills/nextflow-development/SKILL.md"
+    dependencies: ["nextflow"]
+    validation_status: "verified"
+
+  - id: "large-scale-dataset-processing"
+    name: "Large-Scale Chunked Dataset Processing"
+    version: "1.0.0"
+    scope: "project-local"
+    responsible_agent: "infrastructure"
+    config_path: ".agents/skills/large-scale-dataset-processing/SKILL.md"
+    dependencies: ["minio", "s3fs"]
+    validation_status: "verified"
+
+  - id: "provenance-management"
+    name: "W3C PROV-Compliant Provenance Lineage"
+    version: "1.0.0"
+    scope: "project-local"
+    responsible_agent: "security"
+    config_path: ".agents/skills/provenance-management/SKILL.md"
+    dependencies: ["pydantic"]
+    validation_status: "verified"
+
+  - id: "cross-modal-analysis"
+    name: "Cross-Modal DNA-RNA-Protein Integration"
+    version: "1.0.0"
+    scope: "project-local"
+    responsible_agent: "bioinformatics"
+    config_path: ".agents/skills/cross-modal-analysis/SKILL.md"
+    dependencies: ["pyiceberg", "pyarrow"]
+    validation_status: "verified"
+
+  - id: "emil-kowalski-ui"
+    name: "Emil Kowalski Accessible Motion & UI Design"
+    source_repo: "https://github.com/emilkowalski/skills"
+    version: "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c"
+    scope: "project-local"
+    responsible_agent: "frontend"
+    config_path: ".agents/skills/emil-kowalski-ui/SKILL.md"
+    dependencies: ["react", "framer-motion"]
+    validation_status: "verified"
+
+  - id: "firecrawl-research"
+    name: "Firecrawl Documentation & Literature Research MCP"
+    source_repo: "https://github.com/firecrawl/firecrawl-mcp-server"
+    version: "50aed025a15d401d1bc14d1169d314bf23fc4c8b"
+    scope: "project-local"
+    responsible_agent: "bioinformatics"
+    config_path: ".agents/skills/firecrawl-research/SKILL.md"
+    dependencies: ["mcp-client"]
+    validation_status: "configured"

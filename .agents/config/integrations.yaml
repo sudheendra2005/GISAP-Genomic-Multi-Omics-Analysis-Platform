@@ -1,0 +1,29 @@
+version: "1.0.0"
+integrations:
+  ui_design:
+    name: "Emil Kowalski / 21st.dev UI Skills"
+    repository: "https://github.com/emilkowalski/skills"
+    commit: "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c"
+    scope: "Frontend Agent"
+    purpose: "Accessible animations, micro-interactions, component design"
+    backend_dependency: false
+
+  web_research:
+    name: "Firecrawl MCP"
+    repository: "https://github.com/firecrawl/firecrawl-mcp-server"
+    commit: "50aed025a15d401d1bc14d1169d314bf23fc4c8b"
+    scope: "Bioinformatics Research Agent"
+    purpose: "Literature search and documentation extraction with citation tracking (URL, DOI, PMID)"
+    hard_boundary: "Never replaces BLAST/DIAMOND/HMMER; never establishes biological truth unverified"
+
+  sequence_similarity:
+    name: "NCBI BLAST+"
+    type: "algorithmic_engine"
+    scope: "Bioinformatics Agent"
+    boundary: "Nucleotide and protein similarity search behind modular engine interface"
+
+  protein_domain_search:
+    name: "DIAMOND + HMMER"
+    type: "algorithmic_engine"
+    scope: "Bioinformatics Agent"
+    boundary: "Domain-based and profile analysis behind modular engine interface"

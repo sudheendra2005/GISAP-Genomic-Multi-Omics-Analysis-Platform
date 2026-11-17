@@ -1,0 +1,30 @@
+version: "1.0.0"
+agents:
+  orchestrator:
+    name: "GISAP Orchestrator Agent"
+    path: ".agents/agents/orchestrator.md"
+    scope: "Platform coordination, architectural compliance, DoD gatekeeping"
+  frontend:
+    name: "GISAP Frontend Agent"
+    path: ".agents/agents/frontend.md"
+    scope: "React/TS UI, accessible animations, scientific visualization, provenance tree"
+  backend:
+    name: "GISAP Backend Agent"
+    path: ".agents/agents/backend.md"
+    scope: "FastAPI, RBAC, tenant isolation, S3 presigned URLs, streaming validation"
+  bioinformatics:
+    name: "GISAP Bioinformatics Agent"
+    path: ".agents/agents/bioinformatics.md"
+    scope: "DNA/RNA/Protein engines, BLAST/DIAMOND/HMMER interfaces, Iceberg schemas"
+  infrastructure:
+    name: "GISAP Infrastructure Agent"
+    path: ".agents/agents/infrastructure.md"
+    scope: "MinIO, Postgres 16, Redis 7, Prometheus, Grafana, K8s, Slurm"
+  security:
+    name: "GISAP Security Agent"
+    path: ".agents/agents/security.md"
+    scope: "Tenant boundary auditing, JWT/RBAC policies, secret hygiene, audit logging"
+  devops-sre:
+    name: "GISAP DevOps & SRE Agent"
+    path: ".agents/agents/devops-sre.md"
+    scope: "Nextflow pipelines, container profiles, metrics, benchmarks, failure recovery"
