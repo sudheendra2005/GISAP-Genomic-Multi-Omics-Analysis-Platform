@@ -34,4 +34,10 @@ class Settings:
     # External Research
     FIRECRAWL_API_KEY: str = os.getenv("FIRECRAWL_API_KEY", "")
 
+    # AI Annotation (Gemini Free Tier)
+    GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
+    GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+    # Annotation outputs are always tagged ai_suggested_hypothesis — never biological fact
+    AI_ANNOTATION_ENABLED: bool = os.getenv("GEMINI_API_KEY", "") != ""
+
 settings = Settings()
