@@ -31,4 +31,7 @@ class Settings:
     ACCESS_TOKEN_EXPIRE_MINUTES: int = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", "1440"))
     DEFAULT_TENANT_ID: str = os.getenv("DEFAULT_TENANT_ID", "ssit-tumakuru")
 
+    # External Research
+    FIRECRAWL_API_KEY: str = os.getenv("FIRECRAWL_API_KEY", "")
+
 settings = Settings()

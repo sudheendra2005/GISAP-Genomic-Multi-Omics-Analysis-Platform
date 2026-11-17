@@ -98,5 +98,5 @@ skills:
     scope: "project-local"
     responsible_agent: "bioinformatics"
     config_path: ".agents/skills/firecrawl-research/SKILL.md"
-    dependencies: ["mcp-client"]
-    validation_status: "configured"
+    dependencies: ["requests", "re"]
+    validation_status: "verified_authenticated"

@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from backend.core.config import settings
-from backend.api.routes import datasets, jobs
+from backend.api.routes import datasets, jobs, research
 from backend.database.session import init_db
 
 # Initialize database schema on startup
@@ -36,6 +36,7 @@ async def tenant_isolation_middleware(request: Request, call_next):
 # Routes
 app.include_router(datasets.router, prefix="/api/v1")
 app.include_router(jobs.router, prefix="/api/v1")
+app.include_router(research.router, prefix="/api/v1")
 
 @app.get("/health", tags=["System"])
 def health_check():
